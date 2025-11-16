@@ -14,14 +14,14 @@ class WelcomePageRoute extends StatelessWidget {
           children: [
             const SizedBox(height: 45),
             ElevatedButton(
-              onPressed: () => Navigator.pushNamed(context, PageRoutes.login),
-              child: const Text('Login Account'),
+              onPressed: () => Navigator.pushNamed(context, PageRoutes.dashboard),
+              child: const Text('Dashboard'),
             ),
-            const SizedBox(height: 12),
-            ElevatedButton(
-              onPressed: () => Navigator.pushNamed(context, PageRoutes.register),
-              child: const Text('Register Account'),
-            ),
+            // const SizedBox(height: 12),
+            // ElevatedButton(
+            //   onPressed: () => Navigator.pushNamed(context, PageRoutes.register),
+            //   child: const Text('Register Account'),
+            // ),
           ],
         ),
       ),
