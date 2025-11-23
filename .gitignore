@@ -5,7 +5,10 @@
 *.swp
 .DS_Store
 .atom/
+# Build Attributes
 .build/
+*.log
+*.tmp
 .buildlog/
 .history
 .svn/
@@ -43,3 +46,27 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android
+
+# Android backup project (dont commit)
+android.bak/
+android.bak/**
+
+# Android/Gradle build outputs
+# Any build directory in any module
+**/build/
+
+# Gradle internals
+.gradle/
+**/.gradle/
+
+# Android Studio/IntelliJ project files
+.idea/
+**/.idea/
+*.iml
+
+# Local machine-specific config
+**/local.properties
+
+# CMake / NDK / native build junk
+**/.cxx/
